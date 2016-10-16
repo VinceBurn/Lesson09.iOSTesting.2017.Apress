@@ -10,42 +10,53 @@ import UIKit
 
 class CitiesTableViewController: UITableViewController {
 
-    var dict = ["Key":"Value"]
-    
-    private var cityDictionary = ["United Kingdom" : ["London", "Milton Keynes", "Birmingham", "Manchester"],
-                                  "United States of America" : ["New York", "Chicago", "Detroit"],
-                                  "Germany" : ["Berlin", "Munich", "Frankfurt", "Dresden"]]
+    var viewModel:TableViewModel?
     
     var selectedCountry:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selectedCountry
         self.clearsSelectionOnViewWillAppear = false
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let viewModel = viewModel {
+            viewModel.viewDidAppear(animated)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let cityArray = cityDictionary[selectedCountry] {
-            return cityArray.count
+        if let viewModel = viewModel {
+            return viewModel.numberOfRows()
         } else {
             return 0
         }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell", for: indexPath) as? CitiesTableViewCell
 
-        if let cityArray = cityDictionary[selectedCountry] {
-            cell.textLabel?.text = cityArray[indexPath.row]
+        guard let viewModel = viewModel,
+            let citiesTableViewCell = cell else {
+                return UITableViewCell()
         }
-
-        return cell
+        
+        citiesTableViewCell.viewModel = viewModel.cellViewModel(forIndexPath: indexPath)
+        return citiesTableViewCell
+        
     }
    
+}
+
+extension CitiesTableViewController : TableViewControllerDelegate {
+    func setNavigationTitle(_ title:String) -> Void {
+        self.title = title
+    }
 }

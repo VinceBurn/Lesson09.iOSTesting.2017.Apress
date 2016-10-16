@@ -10,14 +10,20 @@ import UIKit
 
 class CountriesTableViewController: UITableViewController {
 
-    private var countryList = ["United Kingdom", "United States of America", "Germany"]
-    private var selectedCountry:String?
+    private var viewModel:TableViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = false
+        self.viewModel = CountriesTableViewModel(view: self, title:"Select a country")
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let viewModel = viewModel {
+            viewModel.viewDidAppear(animated)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -26,24 +32,39 @@ class CountriesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countryList.count
+        guard let viewModel = viewModel else {
+            return 0
+        }
+        
+        return viewModel.numberOfRows()
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
-        cell.textLabel?.text = countryList[indexPath.row]
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as? CountriesTableViewCell
+        
+        guard let viewModel = viewModel,
+               let countriesTableViewCell = cell else {
+            return UITableViewCell()
+        }
+        
+        let detailViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
+        countriesTableViewCell.viewModel = detailViewModel
+        return countriesTableViewCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedCountry = countryList[indexPath.row]
+        guard let viewModel = viewModel else {
+            return
+        }
+        
+        viewModel.selectRow(atIndexPath:indexPath)
         self.performSegue(withIdentifier: "cityListSegue", sender: nil)
     }
     
   
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else {
+        guard let identifier = segue.identifier, let viewModel = viewModel else {
             return
         }
         
@@ -51,11 +72,18 @@ class CountriesTableViewController: UITableViewController {
             return
         }
         
-        if let destination = segue.destination as? CitiesTableViewController,
-           let selectedCountry = selectedCountry {
-            destination.selectedCountry = selectedCountry
+        if let citiesTableViewController = segue.destination as? CitiesTableViewController {
+            citiesTableViewController.viewModel = viewModel.viewModelForSelectedRow()
+            citiesTableViewController.viewModel?.setView(delegate: citiesTableViewController)
         }
 
     }
 
 }
+
+extension CountriesTableViewController : TableViewControllerDelegate {
+    func setNavigationTitle(_ title:String) -> Void {
+        self.title = title
+    }
+}
+

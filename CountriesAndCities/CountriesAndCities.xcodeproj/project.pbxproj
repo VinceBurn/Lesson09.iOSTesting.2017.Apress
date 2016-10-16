@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910A2D261DB2197A00C298FA /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D251DB2197A00C298FA /* CountryModel.swift */; };
+		910A2D271DB2197A00C298FA /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D251DB2197A00C298FA /* CountryModel.swift */; };
+		910A2D281DB2197A00C298FA /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D251DB2197A00C298FA /* CountryModel.swift */; };
+		910A2D2A1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D291DB21A3B00C298FA /* CountriesTableViewModel.swift */; };
+		910A2D2B1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D291DB21A3B00C298FA /* CountriesTableViewModel.swift */; };
+		910A2D2C1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D291DB21A3B00C298FA /* CountriesTableViewModel.swift */; };
+		910A2D2E1DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D2D1DB21A6500C298FA /* CitiesTableViewModel.swift */; };
+		910A2D2F1DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D2D1DB21A6500C298FA /* CitiesTableViewModel.swift */; };
+		910A2D301DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D2D1DB21A6500C298FA /* CitiesTableViewModel.swift */; };
+		910A2D371DB21C8900C298FA /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D361DB21C8900C298FA /* TableViewModel.swift */; };
+		910A2D381DB21C8900C298FA /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D361DB21C8900C298FA /* TableViewModel.swift */; };
+		910A2D391DB21C8900C298FA /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D361DB21C8900C298FA /* TableViewModel.swift */; };
+		910A2D3B1DB2206100C298FA /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3A1DB2206100C298FA /* CellViewModel.swift */; };
+		910A2D3C1DB2206100C298FA /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3A1DB2206100C298FA /* CellViewModel.swift */; };
+		910A2D3D1DB2206100C298FA /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3A1DB2206100C298FA /* CellViewModel.swift */; };
+		910A2D3F1DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3E1DB2208D00C298FA /* TableViewCellViewModel.swift */; };
+		910A2D401DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3E1DB2208D00C298FA /* TableViewCellViewModel.swift */; };
+		910A2D411DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D3E1DB2208D00C298FA /* TableViewCellViewModel.swift */; };
+		910A2D431DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D421DB220FA00C298FA /* CountriesTableViewCell.swift */; };
+		910A2D441DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D421DB220FA00C298FA /* CountriesTableViewCell.swift */; };
+		910A2D451DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D421DB220FA00C298FA /* CountriesTableViewCell.swift */; };
+		910A2D471DB2210600C298FA /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D461DB2210600C298FA /* CitiesTableViewCell.swift */; };
+		910A2D481DB2210600C298FA /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D461DB2210600C298FA /* CitiesTableViewCell.swift */; };
+		910A2D491DB2210600C298FA /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D461DB2210600C298FA /* CitiesTableViewCell.swift */; };
+		910A2D4B1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4A1DB384B700C298FA /* TableViewControllerDelegate.swift */; };
+		910A2D4C1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4A1DB384B700C298FA /* TableViewControllerDelegate.swift */; };
+		910A2D4D1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4A1DB384B700C298FA /* TableViewControllerDelegate.swift */; };
+		910A2D4F1DB3850600C298FA /* TableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4E1DB3850600C298FA /* TableViewCellDelegate.swift */; };
+		910A2D501DB3850600C298FA /* TableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4E1DB3850600C298FA /* TableViewCellDelegate.swift */; };
+		910A2D511DB3850600C298FA /* TableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A2D4E1DB3850600C298FA /* TableViewCellDelegate.swift */; };
 		910E7F141DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */; };
 		910E7F151DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */; };
 		910E7F161DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */; };
@@ -39,6 +69,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910A2D251DB2197A00C298FA /* CountryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		910A2D291DB21A3B00C298FA /* CountriesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewModel.swift; sourceTree = "<group>"; };
+		910A2D2D1DB21A6500C298FA /* CitiesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewModel.swift; sourceTree = "<group>"; };
+		910A2D361DB21C8900C298FA /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		910A2D3A1DB2206100C298FA /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		910A2D3E1DB2208D00C298FA /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		910A2D421DB220FA00C298FA /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		910A2D461DB2210600C298FA /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		910A2D4A1DB384B700C298FA /* TableViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		910A2D4E1DB3850600C298FA /* TableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellDelegate.swift; sourceTree = "<group>"; };
 		910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		910E7F171DAB6A99001AF96D /* CitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
 		917CBFAD1DAA90A50055AEAA /* CountriesAndCities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesAndCities.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +120,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910A2D221DB2190600C298FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				910A2D251DB2197A00C298FA /* CountryModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		910A2D231DB2191800C298FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */,
+				910E7F171DAB6A99001AF96D /* CitiesTableViewController.swift */,
+				910A2D421DB220FA00C298FA /* CountriesTableViewCell.swift */,
+				910A2D461DB2210600C298FA /* CitiesTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		910A2D241DB2193800C298FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				910A2D291DB21A3B00C298FA /* CountriesTableViewModel.swift */,
+				910A2D2D1DB21A6500C298FA /* CitiesTableViewModel.swift */,
+				910A2D3E1DB2208D00C298FA /* TableViewCellViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		910A2D311DB21A6B00C298FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				910A2D361DB21C8900C298FA /* TableViewModel.swift */,
+				910A2D3A1DB2206100C298FA /* CellViewModel.swift */,
+				910A2D4A1DB384B700C298FA /* TableViewControllerDelegate.swift */,
+				910A2D4E1DB3850600C298FA /* TableViewCellDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		917CBFA41DAA90A40055AEAA = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +183,15 @@
 		917CBFAF1DAA90A50055AEAA /* CountriesAndCities */ = {
 			isa = PBXGroup;
 			children = (
+				910A2D311DB21A6B00C298FA /* Protocols */,
+				910A2D241DB2193800C298FA /* ViewModel */,
+				910A2D231DB2191800C298FA /* View */,
+				910A2D221DB2190600C298FA /* Model */,
 				917CBFB01DAA90A50055AEAA /* AppDelegate.swift */,
 				917CBFB41DAA90A50055AEAA /* Main.storyboard */,
 				917CBFB71DAA90A50055AEAA /* Assets.xcassets */,
 				917CBFB91DAA90A50055AEAA /* LaunchScreen.storyboard */,
 				917CBFBC1DAA90A50055AEAA /* Info.plist */,
-				910E7F131DAB6A7F001AF96D /* CountriesTableViewController.swift */,
-				910E7F171DAB6A99001AF96D /* CitiesTableViewController.swift */,
 			);
 			path = CountriesAndCities;
 			sourceTree = "<group>";
@@ -268,8 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910A2D471DB2210600C298FA /* CitiesTableViewCell.swift in Sources */,
+				910A2D3F1DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */,
+				910A2D2A1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */,
+				910A2D431DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */,
 				910E7F181DAB6A99001AF96D /* CitiesTableViewController.swift in Sources */,
 				910E7F141DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */,
+				910A2D371DB21C8900C298FA /* TableViewModel.swift in Sources */,
+				910A2D4F1DB3850600C298FA /* TableViewCellDelegate.swift in Sources */,
+				910A2D3B1DB2206100C298FA /* CellViewModel.swift in Sources */,
+				910A2D261DB2197A00C298FA /* CountryModel.swift in Sources */,
+				910A2D2E1DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */,
+				910A2D4B1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */,
 				917CBFB11DAA90A50055AEAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +370,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910A2D481DB2210600C298FA /* CitiesTableViewCell.swift in Sources */,
+				910A2D401DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */,
+				910A2D2B1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */,
+				910A2D441DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */,
 				910E7F191DAB6A99001AF96D /* CitiesTableViewController.swift in Sources */,
 				917CBFC61DAA90A50055AEAA /* CountriesAndCitiesTests.swift in Sources */,
+				910A2D381DB21C8900C298FA /* TableViewModel.swift in Sources */,
+				910A2D501DB3850600C298FA /* TableViewCellDelegate.swift in Sources */,
+				910A2D3C1DB2206100C298FA /* CellViewModel.swift in Sources */,
+				910A2D271DB2197A00C298FA /* CountryModel.swift in Sources */,
+				910A2D2F1DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */,
+				910A2D4C1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */,
 				910E7F151DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,8 +390,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910A2D491DB2210600C298FA /* CitiesTableViewCell.swift in Sources */,
+				910A2D411DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */,
+				910A2D2C1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */,
+				910A2D451DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */,
 				910E7F1A1DAB6A99001AF96D /* CitiesTableViewController.swift in Sources */,
 				917CBFD11DAA90A50055AEAA /* CountriesAndCitiesUITests.swift in Sources */,
+				910A2D391DB21C8900C298FA /* TableViewModel.swift in Sources */,
+				910A2D511DB3850600C298FA /* TableViewCellDelegate.swift in Sources */,
+				910A2D3D1DB2206100C298FA /* CellViewModel.swift in Sources */,
+				910A2D281DB2197A00C298FA /* CountryModel.swift in Sources */,
+				910A2D301DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */,
+				910A2D4D1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */,
 				910E7F161DAB6A7F001AF96D /* CountriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
