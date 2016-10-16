@@ -72,4 +72,13 @@ extension CountriesTableViewModel : TableViewModel {
         view.setNavigationTitle(tableTitle)
     }
     
+    func model(forIndexPath indexPath:IndexPath) -> AnyObject? {
+        let row = indexPath.row
+        if row < 0 || row >= self.countryData.count {
+            return nil
+        }
+        
+        return countryData[row] as AnyObject
+    }
+    
 }

@@ -65,4 +65,19 @@ extension CitiesTableViewModel : TableViewModel {
         }
         view.setNavigationTitle(tableTitle)
     }
+    
+    func model(forIndexPath indexPath:IndexPath) -> AnyObject? {
+        
+        guard let cityData = cityData else {
+            return nil
+        }
+        
+        let row = indexPath.row
+        if row < 0 || row >= cityData.count {
+            return nil
+        }
+        
+        return cityData[row] as AnyObject
+    }
+    
 }

@@ -47,8 +47,15 @@
 		917CBFB61DAA90A50055AEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917CBFB41DAA90A50055AEAA /* Main.storyboard */; };
 		917CBFB81DAA90A50055AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917CBFB71DAA90A50055AEAA /* Assets.xcassets */; };
 		917CBFBB1DAA90A50055AEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917CBFB91DAA90A50055AEAA /* LaunchScreen.storyboard */; };
-		917CBFC61DAA90A50055AEAA /* CountriesAndCitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917CBFC51DAA90A50055AEAA /* CountriesAndCitiesTests.swift */; };
 		917CBFD11DAA90A50055AEAA /* CountriesAndCitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917CBFD01DAA90A50055AEAA /* CountriesAndCitiesUITests.swift */; };
+		91B0ADFB1DB3F5A0008F12E9 /* CountryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0ADFA1DB3F5A0008F12E9 /* CountryModelTests.swift */; };
+		91B0ADFD1DB3F72D008F12E9 /* CountriesTableViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0ADFC1DB3F72D008F12E9 /* CountriesTableViewViewModelTests.swift */; };
+		91B0ADFF1DB3FC90008F12E9 /* CitiesTableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0ADFE1DB3FC90008F12E9 /* CitiesTableViewModelTests.swift */; };
+		91B0AE011DB3FCF2008F12E9 /* TableViewCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0AE001DB3FCF2008F12E9 /* TableViewCellViewModelTests.swift */; };
+		91B0AE031DB3FD61008F12E9 /* CountriesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0AE021DB3FD61008F12E9 /* CountriesTableViewControllerTests.swift */; };
+		91B0AE051DB3FD71008F12E9 /* CitiesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0AE041DB3FD71008F12E9 /* CitiesTableViewControllerTests.swift */; };
+		91B0AE071DB3FD97008F12E9 /* CountriesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0AE061DB3FD97008F12E9 /* CountriesTableViewCellTests.swift */; };
+		91B0AE091DB3FDA7008F12E9 /* CitiesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0AE081DB3FDA7008F12E9 /* CitiesTableViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,11 +95,18 @@
 		917CBFBA1DAA90A50055AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917CBFBC1DAA90A50055AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917CBFC11DAA90A50055AEAA /* CountriesAndCitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesAndCitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		917CBFC51DAA90A50055AEAA /* CountriesAndCitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAndCitiesTests.swift; sourceTree = "<group>"; };
 		917CBFC71DAA90A50055AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917CBFCC1DAA90A50055AEAA /* CountriesAndCitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesAndCitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917CBFD01DAA90A50055AEAA /* CountriesAndCitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAndCitiesUITests.swift; sourceTree = "<group>"; };
 		917CBFD21DAA90A50055AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B0ADFA1DB3F5A0008F12E9 /* CountryModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryModelTests.swift; sourceTree = "<group>"; };
+		91B0ADFC1DB3F72D008F12E9 /* CountriesTableViewViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewViewModelTests.swift; sourceTree = "<group>"; };
+		91B0ADFE1DB3FC90008F12E9 /* CitiesTableViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewModelTests.swift; sourceTree = "<group>"; };
+		91B0AE001DB3FCF2008F12E9 /* TableViewCellViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelTests.swift; sourceTree = "<group>"; };
+		91B0AE021DB3FD61008F12E9 /* CountriesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		91B0AE041DB3FD71008F12E9 /* CitiesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		91B0AE061DB3FD97008F12E9 /* CountriesTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCellTests.swift; sourceTree = "<group>"; };
+		91B0AE081DB3FDA7008F12E9 /* CitiesTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +213,15 @@
 		917CBFC41DAA90A50055AEAA /* CountriesAndCitiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				917CBFC51DAA90A50055AEAA /* CountriesAndCitiesTests.swift */,
 				917CBFC71DAA90A50055AEAA /* Info.plist */,
+				91B0ADFA1DB3F5A0008F12E9 /* CountryModelTests.swift */,
+				91B0ADFC1DB3F72D008F12E9 /* CountriesTableViewViewModelTests.swift */,
+				91B0ADFE1DB3FC90008F12E9 /* CitiesTableViewModelTests.swift */,
+				91B0AE001DB3FCF2008F12E9 /* TableViewCellViewModelTests.swift */,
+				91B0AE021DB3FD61008F12E9 /* CountriesTableViewControllerTests.swift */,
+				91B0AE041DB3FD71008F12E9 /* CitiesTableViewControllerTests.swift */,
+				91B0AE061DB3FD97008F12E9 /* CountriesTableViewCellTests.swift */,
+				91B0AE081DB3FDA7008F12E9 /* CitiesTableViewCellTests.swift */,
 			);
 			path = CountriesAndCitiesTests;
 			sourceTree = "<group>";
@@ -370,15 +391,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B0AE091DB3FDA7008F12E9 /* CitiesTableViewCellTests.swift in Sources */,
 				910A2D481DB2210600C298FA /* CitiesTableViewCell.swift in Sources */,
 				910A2D401DB2208D00C298FA /* TableViewCellViewModel.swift in Sources */,
 				910A2D2B1DB21A3B00C298FA /* CountriesTableViewModel.swift in Sources */,
 				910A2D441DB220FA00C298FA /* CountriesTableViewCell.swift in Sources */,
+				91B0AE031DB3FD61008F12E9 /* CountriesTableViewControllerTests.swift in Sources */,
+				91B0ADFF1DB3FC90008F12E9 /* CitiesTableViewModelTests.swift in Sources */,
+				91B0ADFB1DB3F5A0008F12E9 /* CountryModelTests.swift in Sources */,
 				910E7F191DAB6A99001AF96D /* CitiesTableViewController.swift in Sources */,
-				917CBFC61DAA90A50055AEAA /* CountriesAndCitiesTests.swift in Sources */,
 				910A2D381DB21C8900C298FA /* TableViewModel.swift in Sources */,
+				91B0AE071DB3FD97008F12E9 /* CountriesTableViewCellTests.swift in Sources */,
 				910A2D501DB3850600C298FA /* TableViewCellDelegate.swift in Sources */,
+				91B0AE051DB3FD71008F12E9 /* CitiesTableViewControllerTests.swift in Sources */,
 				910A2D3C1DB2206100C298FA /* CellViewModel.swift in Sources */,
+				91B0AE011DB3FCF2008F12E9 /* TableViewCellViewModelTests.swift in Sources */,
+				91B0ADFD1DB3F72D008F12E9 /* CountriesTableViewViewModelTests.swift in Sources */,
 				910A2D271DB2197A00C298FA /* CountryModel.swift in Sources */,
 				910A2D2F1DB21A6500C298FA /* CitiesTableViewModel.swift in Sources */,
 				910A2D4C1DB384B700C298FA /* TableViewControllerDelegate.swift in Sources */,

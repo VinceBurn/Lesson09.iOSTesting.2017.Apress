@@ -21,4 +21,6 @@ protocol TableViewModel {
     func selectRow(atIndexPath indexPath:IndexPath)
     
     func viewDidAppear(_ animated: Bool)
+    
+    func model(forIndexPath indexPath:IndexPath) -> AnyObject?
 }
