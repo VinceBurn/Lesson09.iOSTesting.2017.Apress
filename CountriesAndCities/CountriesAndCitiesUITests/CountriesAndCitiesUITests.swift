@@ -13,6 +13,7 @@ class CountriesAndCitiesUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         
+        continueAfterFailure = false
         XCUIApplication().launch()
 
         let device = XCUIDevice.shared()
@@ -20,12 +21,7 @@ class CountriesAndCitiesUITests: XCTestCase {
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testTappingOnDeleteButtonDisplaysAlert() {
-        
     }
     
     func testCountryListAppearsOnAppLaunch() {
@@ -39,4 +35,15 @@ class CountriesAndCitiesUITests: XCTestCase {
         XCTAssertEqual(rows.count, 3)
     }
     
+    func testTappingOnCountryDisplaysDetailViewWithExpectedTitle() {
+        
+        let app = XCUIApplication()
+        app.tables.staticTexts["United Kingdom"].tap()
+        
+        let label = app.navigationBars["United Kingdom"].staticTexts["United Kingdom"]
+        let predicate = NSPredicate(format: "exists == 1", argumentArray: nil)
+        
+        self.expectation(for: predicate, evaluatedWith: label.exists, handler: nil)
+        self.waitForExpectations(timeout: 5, handler: nil)
+    }
 }
